@@ -6,35 +6,42 @@
 </head>
 
 <header>
-    <ul>
-        <li>game</li>
-        <li><a href="scores.html">scores</a></li>
-    </ul>
+    <nav>
+    <h1>Math Quiz</h1>
+    <!-- <ul>
+        <s <li><a href="index.html">Reset Game</a></li>
+        <li><a href="scores.html">Scores</a></li> -->
+    </ul> 
+    </nav>
 </header>
 
 <main>
     <body>
         <section class="quiz-game">
-            <h1>click button to start quiz</h1>
-            <button id="quizbutton"> button start </button>    
+            <h1>Test your math skills! You have 60 seconds to complete the quiz. An incorrect answer will reduce your time by 10 seconds! Good luck!</h1>
+            <button id="quizbutton" class="button"> Start Quiz </button>    
         </section>
 
-        <section id="question-box" class="hide">
-                <p> Questions </p>
-                <p id="question-prompt"> </p>
+        <section id="question-box" class="hide question-box">
+                
+                <h1 id="question-prompt"> </h1>
                 <ul>
                     <li><button id="answera"> </button></li>
                     <li><button id="answerb"> </button></li>
                     <li><button id="answerc"> </button></li>
                     <li><button id="answerd"> </button></li>
                 </ul>
-                <p id="quiz-timer"></p>          
+                <p id="quiz-timer"></p> 
+                <p id="answer-check" ></p>         
         </section>
 
-        <section id="score-box" class="hide">
-            <h1> <strong>Scores</strong></h1>
-            
-
+        <section id="score-box" class="score-box hide">
+                <a id="player-name">  </a>
+                <a id="player-score">  </a>
+            <ol id="score-list">
+                
+            </ol>
+            <button><a id="reset-score" class="button">Reset Scores</a></button>
         </section>
 
 
